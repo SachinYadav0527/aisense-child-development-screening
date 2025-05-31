@@ -1,0 +1,88 @@
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:8000
+    at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+    at listenInCluster (node:net:1945:12)
+    at doListen (node:net:2109:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1924:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 8000
+}
+
+Node.js v20.12.1
+Server running on http://localhost:8000
+Connected to SQLite database.
+Server running on http://localhost:8000
+Connected to SQLite database.
+Received booking data: {
+  full_name: 'Ak',
+  child_age: 1,
+  city: 'Patna',
+  phone: '1234567890',
+  message: 'woah!'
+}
+Booking inserted with ID: 3
+Received booking data: {
+  full_name: 'la la land',
+  child_age: 4,
+  city: 'Gaya',
+  phone: '1234567890',
+  message: 'Welcome to db'
+}
+Booking inserted with ID: 4
+Received booking data: {
+  full_name: 'we',
+  child_age: 27,
+  city: 'Patna',
+  phone: '9693550981',
+  message: 'hi'
+}
+Booking inserted with ID: 5
+Received booking data: {
+  full_name: 'Rishu Raj',
+  child_age: 122,
+  city: 'Greater Noida',
+  phone: '9693550981',
+  message: 'Testing'
+}
+Booking inserted with ID: 6
+Received booking data: {
+  full_name: 'rj',
+  child_age: 147,
+  city: 'tiruvananthpuram',
+  phone: '9693550981',
+  message: 'testing'
+}
+Booking inserted with ID: 7
+Received booking data: {
+  full_name: 'Rishu Raj',
+  child_age: 253,
+  city: 'Greater Noida',
+  phone: '9693550981',
+  message: 'test'
+}
+Booking inserted with ID: 8
+Received booking data: {
+  full_name: 'qwerty',
+  child_age: 145,
+  city: 'noida',
+  phone: '1234567890',
+  message: 'we are coming back'
+}
+Booking inserted with ID: 9
+Received booking data: {
+  full_name: 'q',
+  child_age: 13,
+  city: 'Greater Noida',
+  phone: '9693550981',
+  message: 'hi'
+}
+Booking inserted with ID: 10
