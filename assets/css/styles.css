@@ -1,0 +1,122 @@
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes highlight {
+  0% { background-color: rgba(99, 102, 241, 0.1); }
+  50% { background-color: rgba(99, 102, 241, 0.3); }
+  100% { background-color: transparent; }
+}
+
+/* Modal Styles */
+.modal {
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal.hidden .modal-content {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+/* Form Styles */
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+.btn-loading .spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Testimonials */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.star-rating {
+  color: #f59e0b;
+}
+
+/* Process Steps */
+.process-step {
+  transition: all 0.3s ease;
+}
+
+.process-step:hover {
+  transform: scale(1.05);
+}
+
+.process-step-number {
+  transition: background-color 0.3s ease;
+}
+
+.process-step:hover .process-step-number {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Transitions */
+button, a, input, textarea {
+  transition: all 0.2s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Card Effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Effects */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+/* Utility Classes */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
